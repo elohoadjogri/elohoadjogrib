@@ -18,7 +18,7 @@ border-radius:5%;
 
 /*  SELECT ALL SQUARES IN THE ARRAY     */
 .container .squares:nth-child(-n+4)  {
-background-image: url("./Icons/smileyface 2.png");
+background-image: url("/Icons/smileyface 2.png");
 color: #fff;
 float: left;
 width: 100px;
