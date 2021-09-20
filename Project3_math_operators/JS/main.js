@@ -1,24 +1,25 @@
 
-function Math.random() {
-    return Math.PI;
-  }
-      function Math.random(); {
-        document.getElementById("demo").innerHTML = "Math.random"();
-      }
+// function Math.random() {
+//     return Math.PI;
+//   }
+      function Math_Function () {
+          var number= Math.random();
+        document.getElementById("number").innerHTML = "number";
+    }
 
 
 function subtraction_Function () {
-    var Subtraction = 8-3;
+    var Subtraction = 8-3();
     document.getElementById("subtraction").innerHTML = "8-3 = " + Subtraction;
 }
 
-function multiplication () {
-    var multiplication = 7 * 3;
+function multiplication_Function () {
+    var multiplication = 7 * 3();
     document.getElementById ("multiplication").innerHTML = "7x3= " + multiplication;
 }
      
-function division () {
-    var division = 35 / 7;
+function division_Function () {
+    var division = 35 / 7();
     document.getElementById ("division").innerHTML = "35/7= " + division;
 }  
  
