@@ -9,17 +9,17 @@
 
 
 function subtraction_Function () {
-    var Subtraction = 8-3();
-    document.getElementById("subtraction").innerHTML = "8-3 = " + Subtraction;
+    var subtraction = 8-3;
+    document.getElementById("subtraction").innerHTML = "8-3 = " + subtraction;
 }
 
 function multiplication_Function () {
-    var multiplication = 7 * 3();
+    var multiplication = 7 * 3;
     document.getElementById ("multiplication").innerHTML = "7x3= " + multiplication;
 }
      
 function division_Function () {
-    var division = 35 / 7();
+    var division = 35 / 7;
     document.getElementById ("division").innerHTML = "35/7= " + division;
 }  
  
@@ -31,4 +31,24 @@ function more_math () {
 function modulus_operator () {
     var modulus_operator = 31 % 5;
     document.getElementById("modulus_operator").innerHTML = "When you divide 31 by 5 you have a remainder of: " + modulus_operator;
+}
+
+function negation_operator () {
+    var x = 10;
+    document.getElementById('Math').innerHTML = "-x= " + negation_operator;
+}
+
+var x = 5;
+x++ ;
+document.write(x);
+
+var x = 4.20;
+x--;
+document.write(x);
+
+window.alert (Math.random());
+window.alert(Math.random() * 100);
+
+function Math.abs(-7.25)() {
+    document.getElementById("demo").innerHTML =Math.abs(-7.25);
 }
