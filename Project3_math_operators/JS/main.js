@@ -35,7 +35,7 @@ function modulus_operator () {
 
 function negation_operator () {
     var x = 10;
-    document.getElementById('Math').innerHTML = "-x= " + negation_operator;
+    document.getElementById("negation_operator").innerHTML = "-x= " + negation_operator;
 }
 
 var x = 5;
@@ -49,6 +49,3 @@ document.write(x);
 window.alert (Math.random());
 window.alert(Math.random() * 100);
 
-function Math.abs(-7.25)() {
-    document.getElementById("demo").innerHTML =Math.abs(-7.25);
-}
