@@ -30,21 +30,25 @@ Add_numbers_1 ();
 Add_numbers_2 ();
 
 
-function get_Date() {
-    if (new Date () .getHours () < 12) {
-        document.getElementById("Timing").innerHTML = "What are you doing today?";
+function Date_function() {
+    // var Time = new Date().getHours();
+    // var Reply;
+    if (new Date() .getHours () < 14) {
+        document.getElementById("Greeting").innerHTML = "How are you today?";
     }
 }
 
-function get_Age() {
+function Date_function() {
     if (new Age () .getmonths () < 12) {
         document.getElementById("Birthday").innerHTML = "When next are you celebrating?";
     }
 }
 
 
-function Age_Function() {
-Date = document.getElementById("Date").ariaValueMax;
+function Age_function() {
+    var Age = new Age().getDate();
+    var Reply;
+// Date = document.getElementById("Date").ariaValueMax;
 if(Date >= 10) {
 Drive = "You are eligible to drive!";
 }
