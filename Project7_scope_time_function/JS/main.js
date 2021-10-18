@@ -30,26 +30,26 @@ Add_numbers_1 ();
 Add_numbers_2 ();
 
 
-function Date_function() {
-    // var Time = new Date().getHours();
-    // var Reply;
-    if (new Date() .getHours () < 14) {
-        document.getElementById("Greeting").innerHTML = "How are you today?";
-    }
-}
+// function Date_function() {
+//     // var Time = new Date().getHours();
+//     // var Reply;
+//     if (new Date() .getHours () < 14) {
+//         document.getElementById("Greeting").innerHTML = "How are you today?";
+//     }
+// }
 
-function Date_function() {
-    if (new Age () .getmonths () < 12) {
-        document.getElementById("Birthday").innerHTML = "When next are you celebrating?";
-    }
-}
+// function Date_function() {
+//     if (new Age () .getmonths () < 12) {
+//         document.getElementById("Birthday").innerHTML = "When next are you celebrating?";
+//     }
+// }
 
 
 function Age_function() {
-    var Age = new Age().getDate();
+    var Age = document.getElementById("Age").value;
     var Reply;
 // Date = document.getElementById("Date").ariaValueMax;
-if(Date >= 10) {
+if(Age >= 18) {
 Drive = "You are eligible to drive!";
 }
 else {
