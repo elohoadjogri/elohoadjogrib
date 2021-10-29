@@ -1,4 +1,4 @@
-function count_To_Twenty() {
+function Counting_To_Twenty() {
     var Digit ="";
     var x = 10;
     while (x < 21) {
@@ -8,14 +8,14 @@ function count_To_Twenty() {
     document.getElementById("Counting_To_Twenty").innerHTML = Digit;
 }
 
-var Instruments = {"Guitar", "Drums", "Piano", "Bass", "Violin", "Trumpet", "Flute"};
+var Instruments = ["Guitar", "Drums", "Piano", "Bass", "Violin", "Trumpet", "Flute"];
 var Content = "";
 var Y;
 function for_Loop() {
     for (Y = 0; Y < Instruments.length; Y++) {
         Content += Instruments [Y] + "<br>";
     }
-    document.getElementById("List_of_Instruments").innerHTML = List_of_Instruments;
+    document.getElementById("List_of_Instruments").innerHTML = Instruments;
 }
 
 function dog_pics () {
@@ -26,10 +26,16 @@ function dog_pics () {
     document.getElementById("Dog").innerHTML = "In this picture, the dog is " + Dog_Picture[2] + ".";
 }
 
-function constant_function (Vacation_Location) {
-    const Vacation_Location = {country: "Egypt", city: "Cairo", month:"March"};
-document.getElementById("Constant").innerHTML = "The coolest city in Egypt" + Vacation_Location.country + "Egypt" + city.Cairo;
-}
+
+   let Vacation_Location = {
+       country: "Egypt", 
+       city: "Cairo", 
+       month:"March",
+       description: function() {
+return " The coolest city in " + this.country + "is" + this.city;
+       }
+    };
+document.getElementById("Constant").innerHTML = Vacation_Location.description();
 
 var X = 85;
 document.write(X);
