@@ -17,7 +17,7 @@ if (activePlayer === 'X') {
 //Active player may only be 'X' or 'O' so, if not 'X' it must be 'O'
 } else {
   //If activePlayer is equal to 'O', the o.png is placed in HTML.
-  select.style.backgroundImage = 'url ("images/o.png")';
+  select.style.backgroundImage = 'url("images/o.png")';
 }
 //squareNumber and activePlayer are concatenated together and added to array.
 selectedSquares.push(squareNumber + activePlayer);
@@ -91,7 +91,7 @@ function computersTurn () {
    //X O 3, 4, 5 condition.
    else if (arrayIncludes('3O', '4O', '5O')) { drawWinLine(50, 304, 558, 304); }
    //X O 6, 7, 8 condition.
-   else if (arrayIncludes('6O', '4O', '7O')) { drawWinLine(50, 508, 558,508); }
+   else if (arrayIncludes('6O', '7O', '8O')) { drawWinLine(50, 508, 558,508); }
    //X O 0, 3, 6 condition.
    else if (arrayIncludes('0O', '3O', '6O')) { drawWinLine(100, 50, 100, 558); }
    //X O 1, 4, 7 condition.
@@ -275,14 +275,14 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
 //   }, 1000);
 // }
 
-// // Fucntion to reset the game and break the infinite loop
-// function resetGame() {
-//   for (let i = 0; i < 9; i++) {
-//     let square = document.getElementById(String(i));
-//     square.style.backgroundImage = "";
-//   }
-//   selectedSquares = [];
-// }
+ // Fucntion to reset the game and break the infinite loop
+function resetGame() {
+  for (let i = 0; i < 9; i++) {
+    let square = document.getElementById(String(i));
+    square.style.backgroundImage = "";
+  }
+  selectedSquares = [];
+}
 
  
 
