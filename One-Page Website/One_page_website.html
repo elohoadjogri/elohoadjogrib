@@ -36,11 +36,74 @@
 <div>
 
 <!--PHOTO CONTAINER-->
-<h2 style="text-align:center">Lightbox</h2>
+<!-- <h2 style="text-align:center">Lightbox</h2> -->
 <div class="photo-container">
 <div class="photo">
-<img src="./Image/Thumb/thumbnail_5.png" alt= "...">
+<img src="./Image/Thumb/thumbnail_1.jpg" alt= "...">
 <div class="photo-overlay">
+
+    <!-- Images used to open the lightbox -->
+<div class="row">
+    <div class="column">
+      <img src="./Image/Thumb/img1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="./Image/Thumb/img2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+    </div>
+    <!-- <div class="column">
+      <img src="img3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="img4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+    </div> -->
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 2</div>
+        <img src="./Image/Thumb/img1_wide.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 3</div>
+        <img src="img2_wide.jpg" style="width:100%">
+      </div>
+  
+      <!-- <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="img3_wide.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="img4_wide.jpg" style="width:100%">
+      </div> -->
+  
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+      <!-- Thumbnail image controls -->
+      <div class="column">
+        <img class="demo" src="./Image/Thumb/img1.jpg" onclick="currentSlide(1)" alt="Nature">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="Snow">
+      </div>
+  
+      
+    </div>
+  </div>
 
 <p>We have several beautiful nature</p>
 </div>
