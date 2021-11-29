@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <script> src="https://ajax.googleapis.com/ajax/libs/jQuer/3.4.0/jquery.min.JS"</script>
+    </head>
+
+
+    <body>
+    <script>
+        
+        $( document ).ready(function() {
+
+// Sets up click behavior on all button elements with the alert class
+// that exist in the DOM when the instruction was executed
+$( "button.alert").on("click", function() {
+
+});
+
+// Now create a new button element with the alert class. This button
+// was created after the click listeners were applied above, so it
+// will not have the same click behaviour as its peers
+$( "<button class='alert'>Alert!</button>" ).appendTo( document.body );
+        
+});
+
+
+// Slowly hide all partagraphs
+$("p").hide("slow");
+
+// Quickly show all divs that have the hidden style class
+$("div.hidden").show("fast");
+
+
+    </script>
+    </body>
+</html>
