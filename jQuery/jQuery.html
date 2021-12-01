@@ -2,17 +2,41 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-
-        <script> src="https://ajax.googleapis.com/ajax/libs/jQuer/3.4.0/jquery.min.JS"</script>
+        <meta name="viewport"content="width=device-width, initial-scale=1.0">
+        <meta http-equip="X-UA-Compatible" content="ie=edge">
+        <script> src="https://ajax.googleapis.com/ajax/libs/juery/3.4.0/jquery.min.js"
+        </script>
     </head>
 
-
-    <body>
     <script>
         
         $( document ).ready(function() {
 
-// Sets up click behavior on all button elements with the alert class
+$("html").append(
+        "<body>\
+            <div id='container'>\
+                <div id='inner'>\
+                    <h1>Basic jQuery</h1>\
+                    <p id='1'>Paragraph 1</p>\
+                    <p id='2'>Paragraph 2</p>\
+                    <p id='3'>Paragraph 3</p>\
+                </div>\
+            </div>\
+        </body>"
+    );
+    $("#2").css({"color":"red"});
+    $("#3").click(function() {
+        $('h1').hide();
+    });     
+    $("#1").click(function() {
+        console.log( "You clicked a paragraph!" );
+    });
+
+});
+</script>
+
+
+<!-- // Sets up click behavior on all button elements with the alert class
 // that exist in the DOM when the instruction was executed
 $( "button.alert").on("click", function() {
 
@@ -33,6 +57,6 @@ $("p").hide("slow");
 $("div.hidden").show("fast");
 
 
-    </script>
-    </body>
+    
+    
 </html>
