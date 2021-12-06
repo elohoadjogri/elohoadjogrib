@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <style>
+        body {
+          background-color: lightblue;
+        }
+
+    <!-- Required meta tags -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    #myContainer {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background: black;
+    }
+    #myAnimation {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: yellowgreen;
+    }
+
+    </style>  
+  </head>
+  <body>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/QEPmDnVkLzg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1>My First JavaScript Animation</h1>
+    <p>Hello world!</p>
+    <a href="https://www.w3schools.com">The Beat</a>
+
+    <p>
+        <button onclick="myMove()">Click Me</button> 
+        </p>
+        
+        <div id ="myContainer">
+        <div id ="myAnimation"></div>
+        </div>
+        
+        <script>
+        var id = null;
+        function myMove() {
+          var elem = document.getElementById("myAnimation");   
+          var pos = 0;
+          clearInterval(id);
+          id = setInterval(frame, 10);
+          function frame() {
+            if (pos == 350) {
+              clearInterval(id);
+            } else {
+              pos++; 
+              elem.style.top = pos + 'px'; 
+              elem.style.left = pos + 'px'; 
+            }
+          }
+        }
+        </script>
+
+  </body>
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+.container1 {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 105%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container1:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container2 {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width
+}
+  
+    body {
+  background-color: lightblue;
+}
+ .container3 {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 35%;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 35%;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 35%;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 35%;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}   
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 320px;
+    height: 240px;
+    border: 2px solid green;
+    padding: 10px;
+    border-radius: 25px;
+    
+}
+footer {
+    text-align: center;
+    font-weight: bold;
+}
+
+table {
+    font-family: ariel, sans-serif;
+    
+}
+td,th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+table, th, td {
+    border: 1px solid black;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: #04AA6D;
+  color: white;
+}
+
+table.name {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid black;
+  margin:auto;
+ 
+  
+}
+
+p {
+ color: blue;
+}
+
+table.name1 {
+    padding-top: 10px;
+}
+​* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  color: blue;
+  flex: 50%;
+}
+
+.row {
+  display: flex;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a:hover {
+    background-color: yellow;
+}
+
+p:hover {
+  background-color: yellow;
+}
+
+.container4{
+  padding:10px;
+}
+
+.container5{
+  padding:10px;
+  padding-top:20px;
+  padding-left:25px;
+  padding-right:37px;
+}
+
+</style>
+</head>
+<body>
+    
+
+    <h2>Fade in Overlay</h2>
+    <p>Hover over the image to see the effect.</p>
+    
+    <div class="container1">
+      <img src="img/img_redeemer.jpg" alt="Redeemer" class="image">
+      <div class="overlay">
+        <div class="text">Hello World</div>
+      </div>
+    </div>
+    
+
+    <h1>The video muted attribute</h1>
+
+    <video width="320" height="240" controls autoplay muted loop>
+      <source src="img/video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    
+    <h2>Image Text</h2>
+    <p>How to place text over an image:</p>
+    
+    <div class="container2">
+      <video width="320" height="240" controls autoplay muted loop>
+        <source src="img/video_3.mp4" type="video/mp4">
+      </video>
+        <div class="bottom-left">Bottom Left</div>
+        <div class="top-left">Top Left</div>
+        <div class="top-right">Top Right</div>
+        <div class="bottom-right">Bottom Right</div>
+        <div class="centered">Centered</div>
+      </div>
+   
+
+
+    <h2>Two Equal Columns</h2>
+    
+
+    <div class="row">
+     <div class="column" style="background-color:#aaa;">
+       <h2>Column 1</h2>
+       <p>Some text..</p>
+     </div>
+     <div class="column" style="background-color:#bbb;">
+       <h2>Column 2</h2>
+       <p>Some text..</p>
+     </div>
+   </div>
+   
+  
+   <h2>CSS height and width properties</h2>
+
+<div>This element has a height of 50 pixels and a width of 100%.</div>
+
+
+    <!--NAV-->
+    <div class="navbar">
+        <a href="#Home">Home</a>
+        <a href="#About">News</a>
+        <a href="#Contact">Contact</a>
+      </div>
+    
+      <div class="main">
+        <p>Some text some text some text some text..</p>
+      </div>
+    <!--END NAV-->
+
+
+    <h2>Wonders of the World</h2>
+    <p>Its beauty is truely iconic!.</p> 
+    
+<img src="img/img_taj-mahal-india.jpg" alt="India" class="center">
+
+<h2>Image Text</h2>
+    <p>How to place text over an image:</p>
+
+    ​<div class="container3">
+        <img src="img/snow_island.jpg" alt="Snow" style="width:53%;">
+        <div class="bottom-left">Bottom Left</div>
+        <div class="top-left">Top Left</div>
+        <div class="top-right">Top Right</div>
+        <div class="bottom-right">Bottom Right</div>
+        <div class="centered">Centered</div>
+      </div>
+
+
+<h2>HTML Table</h2>
+<h2>Add a border to a table:</h2>
+<h2>Single Border Around The Table</h2>
+<h2>The padding Property</h2>
+<p>This property adds space between the border and the content in a table.</p>
+<h2>Colored Table Header</h2>
+<h1>This is heading 1</h1>
+<p>This is an ordinary paragraph. Notice that this text is blue. The default text color for a page is defined in the body selector.</p>
+<p>Another paragraph.</p>
+
+
+<div class="container4">
+<table class="name">
+    <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+    </tr>
+    <tr>
+        <td>Deblem limited</td>
+        <td>Judith</td>
+        <td>Canada</td>
+    </tr>
+    <tr>
+        <td>Lemmie International ltd</td>
+        <td>Deborah</td>
+        <td>United Kingdom</td>
+    </tr>
+    <tr>
+        <td>ZenithConsulting</td>
+        <td>Joanna</td>
+        <td>Italy</td>
+    </tr>
+</table>
+</div>
+
+<div class="container5">
+<table class="name1">
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Savings</th>
+    </tr>
+    <tr>
+        <td>Eloho</td>
+        <td>Adjogri</td>
+        <td>$150</td>
+    </tr> 
+</table>
+</div>
+
+<footer>
+    <h1> The footer element</h1>
+    <p>Author: Eloho Adjogri<br>
+    <a href="mailto:eadjo28@gmail.com">eadjo28@gmail.com</a>
+</p>
+
+
+</footer>
+
+</body>
+</html>
